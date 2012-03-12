@@ -17,7 +17,7 @@ alias = ( subject, from, to ) -> subject[ to ] = subject[ from ]
 ###*
  *
 ###
-Number.prototype.seconds = -> new Duration @
+Number.prototype.seconds = -> new Duration @ * 1 # force coerce
 Number.prototype.minutes = -> new Duration @ * 60
 Number.prototype.hours   = -> new Duration @ * 60 * 60
 Number.prototype.days    = -> new Duration @ * 60 * 60 * 24
