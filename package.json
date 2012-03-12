@@ -2,7 +2,7 @@
   "author": "Jeremy Ruppel",
   "name": "interim",
   "description": "Time helpers for javascript",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "url": ""
   },
