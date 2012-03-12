@@ -1,5 +1,5 @@
 ###*
- *
+ * Duration - base class for working with time
 ###
 class Duration
 
@@ -12,12 +12,12 @@ class Duration
   ago : ( date=new Date( ) ) -> date - @
 
 ###*
- *
+ * Method alias convenience method
 ###
 alias = ( subject, from, to ) -> subject[ to ] = subject[ from ]
 
 ###*
- *
+ * Number prototype extensions
 ###
 Number.prototype.seconds = -> new Duration @ * 1 # force coerce
 Number.prototype.minutes = -> new Duration @ * 60
@@ -28,7 +28,7 @@ Number.prototype.months  = -> new Duration @ * 60 * 60 * 24 * 30
 Number.prototype.years   = -> new Duration @ * 60 * 60 * 24 * 365
 
 ###*
- *
+ * Aliases
 ###
 alias Number.prototype, 'minutes', 'minute'
 alias Number.prototype, 'seconds', 'second'
