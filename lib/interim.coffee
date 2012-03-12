@@ -9,6 +9,8 @@ class Duration
 
   valueOf : -> @date.getTime( )
 
+  ago : ( date=new Date( ) ) -> date - @
+
 ###*
  *
 ###
@@ -25,6 +27,9 @@ Number.prototype.weeks   = -> new Duration @ * 60 * 60 * 24 * 7
 Number.prototype.months  = -> new Duration @ * 60 * 60 * 24 * 30
 Number.prototype.years   = -> new Duration @ * 60 * 60 * 24 * 365
 
+###*
+ *
+###
 alias Number.prototype, 'minutes', 'minute'
 alias Number.prototype, 'seconds', 'second'
 alias Number.prototype, 'hours',   'hour'
