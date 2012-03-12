@@ -11,7 +11,7 @@
   },
   "main":"./lib/interim",
   "scripts":{
-    "test":"mocha -r ./lib/interim"
+    "test":"mocha"
   },
   "dependencies": {},
   "devDependencies": {
