@@ -9,8 +9,13 @@
   "engines": {
     "node": "~v0.4.11"
   },
+  "main":"./lib/interim",
+  "scripts":{
+    "test":"mocha -r ./lib/interim"
+  },
   "dependencies": {},
   "devDependencies": {
-    "mocha":"*"
+    "mocha":"0.14.1",
+    "should":"0.6.0"
   }
 }
