@@ -9,7 +9,13 @@ class Duration
 
   valueOf : -> @date.getTime( )
 
-  ago : ( date=new Date( ) ) -> date - @
+  until : ( date ) -> date.getTime( ) - @
+
+  ago : ( ) -> @until new Date( )
+
+  since : ( date ) -> date.getTime( ) + @
+
+  fromNow : ( ) -> @since new Date( )
 
 ###*
  * Method alias convenience method
